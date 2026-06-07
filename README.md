@@ -1,10 +1,10 @@
 # Packaging-Damage-Detection-System
 
-This project uses Deep Learning and Computer Vision to classify package images as Damaged or Intact.
+This project uses Deep Learning and Computer Vision techniques to classify package images as Damaged or Intact. A custom CNN model is developed and compared with a Transfer Learning model (MobileNetV2) to evaluate classification performance.
 
 ## Project Overview
 
-The goal is to build an automated package inspection system that can identify damaged packages from images. The project compares a custom CNN model with a Transfer Learning model (MobileNetV2) to evaluate their performance.
+The objective of this project is to automate package inspection using image classification. The system learns visual features from package images and predicts whether a package is damaged or intact.
 
 ## Features
 
@@ -18,14 +18,14 @@ The goal is to build an automated package inspection system that can identify da
 - Classification report
 - Accuracy and loss curves
 - ROC curve
-- Model performance comparison
+- Model comparison
 
 ## Dataset
 
-The dataset contains images belonging to two classes:
+The dataset contains images from two categories:
 
-- Damaged
-- Intact
+- Damaged Packages
+- Intact Packages
 
 Source: Kaggle – Damaged and Intact Packages Dataset
 
@@ -38,10 +38,52 @@ Source: Kaggle – Damaged and Intact Packages Dataset
 - Matplotlib
 - Seaborn
 - Scikit-learn
+- Jupyter Notebook
 
-## Results
+## How to Run
 
-The project evaluates both models using:
+### 1. Download the Dataset
+Download the dataset from Kaggle and place it in the appropriate directory.
+
+### 2. Install Required Libraries
+
+bash pip install tensorflow numpy pandas matplotlib seaborn scikit-learn pillow 
+
+### 3. Open the Notebook
+
+Launch Jupyter Notebook:
+
+bash jupyter notebook 
+
+Then open the uploaded .ipynb file.
+
+### 4. Update Dataset Path
+
+Locate the dataset path variable in the notebook and update it if necessary:
+
+python base_path = "your_dataset_path" 
+
+### 5. Run All Cells
+
+Run the notebook from top to bottom:
+
+text Kernel → Restart & Run All 
+
+### 6. View Results
+
+The notebook will generate:
+
+- Accuracy and Loss Curves
+- Confusion Matrix
+- Classification Report
+- ROC Curve
+- Model Comparison Results
+
+Saved figures will be stored in the current working directory.
+
+## Evaluation Metrics
+
+The models are evaluated using:
 
 - Accuracy
 - Precision
@@ -53,10 +95,10 @@ The project evaluates both models using:
 ## Future Improvements
 
 - Grad-CAM visualization
-- Advanced transfer learning models
 - Hyperparameter tuning
-- Deployment as a web application
+- Additional transfer learning models
+- Web application deployment
 
 ## Author
 
-Student Project – Image Classification using Deep Learning
+Deep Learning Project – Damaged vs Intact Package Classification
